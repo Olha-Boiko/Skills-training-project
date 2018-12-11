@@ -1,0 +1,17 @@
+@import "./css/header.css";
+@import "./css/content.css";
+@import "./fonts/Montserrat/stylesheet.css";
+@import "./fonts/PTSerif/stylesheet.css";
+@font-face {
+    font-family: 'Couture';
+    src: url('./fonts/couture-bld.otf');
+  }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+}

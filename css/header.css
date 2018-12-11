@@ -1,0 +1,209 @@
+header {
+  min-height: 588px;
+}
+.header-layer{
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  /*max-width: 1200px;*/
+  max-height: 588px;
+  margin: 0px;
+}
+/* <---------menu line start------->*/
+.logo-menu-line {
+  display: flex;
+  padding: 30px 100px 30px 100px;
+  width: 100%;
+  justify-content: space-between;
+}
+.logo {
+  height: auto;
+  width: auto;
+  padding-left: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  color: rgb(27, 27, 27);
+  font-family: Montserrat;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+nav ul li:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(208, 57, 88);
+  border-radius: 5px;
+}
+/* <--------menu line end--------> */
+
+/* <--------title and form line stat---------->*/
+.motto-request-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 100px 30px 100px;
+}
+.motto-descript {
+  width: 45%;
+}
+.motto {
+  font-family: Montserrat;
+  font-size: 4.525em;
+  font-weight: 700;
+  line-height: 0.889;
+  text-align: left;
+}
+.motto span {
+  color: rgb(208, 57, 88);
+}
+.descript{
+  font-family: PTSerif;
+  color: rgb(27, 27, 27);
+  font-size: 1.3em;
+  font-weight: 520;
+  line-height: 1.4;
+  text-align: left;
+  padding-top: 30px;
+}
+
+/* <------form start------->*/
+.request {
+  width: 400px;
+  position: relative;
+}
+form {
+  position: absolute;
+  background-color: rgb(208, 57, 88);
+  border-radius: 5px;
+  width: 400px;
+  text-align: center;
+}
+.request h6 {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 1.375em;
+  font-weight: 400;
+  padding: 20px;
+}
+.request input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: PTSerif;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  min-width: 300px;
+}
+/*<----placeholder---->*/
+
+.request input[placeholder]::-webkit-input-placeholder {
+  color: rgb(186, 186, 186);
+  font-family: PTSerif;
+  font-size: 1em;
+  font-weight: 520;
+  line-height: 1.2;
+  opacity: 1; transition: opacity 0.3s ease;
+}
+.request input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 0; transition: opacity 0.3s ease;
+}
+/* Firefox 19+ */
+.request input[placeholder]::-moz-placeholder {
+  color: rgb(186, 186, 186);
+  font-family: PTSerif;
+  font-size: 1em;
+  font-weight: 520;
+  line-height: 1.2;
+  opacity: 1; transition: opacity 0.3s ease;
+}
+.request input[placeholder]:focus::-moz-placeholder {
+  opacity: 0; transition: opacity 0.3s ease;
+}
+/* Firefox 18- */
+.request input[placeholder]:-moz-placeholder {
+  color: rgb(186, 186, 186);
+  font-family: PTSerif;
+  font-size: 1em;
+  font-weight: 520;
+  line-height: 1.2;
+  opacity: 1; transition: opacity 0.3s ease;
+}
+.request input[placeholder]:focus:-moz-placeholder {
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.request input[placeholder]:-ms-input-placeholder {
+  color: rgb(186, 186, 186);
+  font-family: PTSerif;
+  font-size: 1em;
+  font-weight: 520;
+  line-height: 1.2;
+  opacity: 1; transition: opacity 0.3s ease;
+}
+.request input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 0; transition: opacity 0.3s ease;
+}
+/*<------checkbox-------->*/
+.container-checkbox{
+  margin: 10px;
+}
+label {
+font-family: PTSerif;
+color: rgb(255, 255, 255);
+font-size: 1.25em;
+font-weight: 400;
+line-height: 1.25;
+text-align: left;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: rgb(22, 22, 22);
+}
+/*<-------checkbox end------->*/
+
+button {
+  font-family: Montserrat;
+  color: rgb(255, 255, 255);
+  font-size: 1.375em;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgb(22, 22, 22);
+  border-radius: 5px;
+  border: rgb(22, 22, 22);
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+  min-width: 300px;
+  cursor: pointer;
+}
